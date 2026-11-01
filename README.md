@@ -8,7 +8,6 @@ This project has not been security-audited. Do not store valuable or irreplaceab
 
 **Important:** After 10 unsuccessful unlock attempts, the program exits without automatically destroying files or powering off the machine. Blank passphrases and mount failures also count toward the limit. The delete and wipe menu actions explicitly run `shred` and can permanently destroy data. Only proceed with disposable data in an isolated Linux virtual machine.
 
-Local `vault.img` and `securevault` files are runtime/build artifacts. Do not publish them: the image may contain private data, and the executable should be rebuilt from source.
 
 ## Requirements
 
