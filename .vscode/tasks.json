@@ -1,0 +1,31 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build vault",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-O2",
+        "-std=c++17",
+        "VaultOS.cpp",
+        "-o",
+        "securevault"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "run vault",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-c",
+        "sudo ./securevault"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}

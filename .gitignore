@@ -1,0 +1,12 @@
+# Local build artifacts and vault data
+/securevault
+/vault.img
+/*.iso
+*.o
+*.d
+
+# Local Buildroot checkout; keep it out of the application repository
+/buildroot/
+
+# Empty nested repository; the application source is at the workspace root
+/VaultOS/
